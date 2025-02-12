@@ -15,7 +15,7 @@ const Messages = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/api/messages')
+      .get('https://aitsmanagement.onrender.com')
       .then((response) => {
         setMessages(response.data);
         setLoading(false);
